@@ -1,0 +1,7 @@
+$i: 12;
+@while $i < 46 {
+    .fs_#{$i} {
+		font-size: #{$i}px;
+		$i: $i + 2;
+	}
+}
