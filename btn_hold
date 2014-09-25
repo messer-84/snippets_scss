@@ -1,0 +1,13 @@
+.btn_hold{
+	position: relative;
+	@extend %clearfix;
+	&.btn_h_center{
+		text-align: center;
+	}
+	&.btn_h_right{
+		text-align: right;
+	}
+	&.btn_h_left{
+		text-align: left;
+	}
+}
