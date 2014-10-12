@@ -1,3 +1,18 @@
+%clearfix{
+	&:after{
+		content: '';
+		display: table;
+		line-height: 0;
+		clear: both;
+	}
+}
+
+%img_adaptive{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 %visuallyhidden {
   margin: -1px;
   padding: 0;
