@@ -1,6 +1,0 @@
-@each $bgs in ('mod_male','mod_finances_2','mod_kids_1','mod_face_1','mod_face_2','mod_goal_1',
-'mod_budget_1','mod_managment_1','mod_insurance_1'){
-	.cell_data.#{$bgs}:before{
-		background-image: url('../i/summary/#{$bgs}.png');
-	}
-}
