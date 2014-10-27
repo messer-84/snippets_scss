@@ -23,3 +23,13 @@
   clip: rect(0, 0, 0, 0);
   position: absolute;
 }
+	%color_back{
+		&:before{
+			position: absolute;
+			content: "";
+			left: 50%;
+			top: 0;
+			width: 4000px;
+			margin: 0 0 0 2000px;
+		}
+	}
