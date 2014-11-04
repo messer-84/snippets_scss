@@ -1,0 +1,34 @@
+$x: 0;
+$y: 0;
+$i: 1;
+$inString: 8;
+$mX: true;
+$mY: true;
+@for $i from 1 through 300{
+	@if ($i > $inString){
+		$y: $y+100;
+		$inString: $inString+ 8;
+		$x: 0;
+
+	}
+	.thumb_img_#{$i}{
+		@if $x > 0{
+			$mX: -#{$x}px;
+
+		} @else{
+			$mX: #{$x};
+
+		}
+		@if $y > 0{
+			$mY: -#{$y}px;
+
+		} @else{
+			$mY: #{$y};
+		}
+		background-position: $mX $mY;
+
+	}
+
+	$x: $x+100;
+
+}
