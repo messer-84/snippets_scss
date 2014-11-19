@@ -13,11 +13,13 @@
 		left: 0;
 		right: 0;
 		height: 7px;
+		text-align: center;
 	}
 	.bx-pager-item{
 		display: inline-block;
+		vertical-align: top;
 		margin: 0 6px;
-		
+
 	}
 	.bx-pager-link{
 		display: block;
