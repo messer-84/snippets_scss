@@ -1,0 +1,33 @@
+.bx-viewport{
+		z-index: 5;
+	}
+	.bx-controls{
+		z-index: 10;
+		left: 0;
+		right: 0;
+		position: absolute;
+	}
+	.bx-pager{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 7px;
+	}
+	.bx-pager-item{
+		display: inline-block;
+		margin: 0 6px;
+		
+	}
+	.bx-pager-link{
+		display: block;
+		height: 7px;
+		width: 7px;
+		border:1px solid #8b8b8b;
+		border-radius: 50%;
+		text-indent:-9999px;
+		&.active{
+			background: #f46f4b;
+			border:none;
+		}
+	}
