@@ -1,0 +1,71 @@
+.bonus_table_wrap {
+  position: relative;
+  padding: 60rem 96rem 80rem;
+  margin: 0 auto;
+  @extend %clearfix;
+  &.js_hidden_block {
+    display: none;
+  }
+  .data_table & {
+    width: 100%;
+  }
+
+  .data_table_wrap.full_width_mod & {
+    //    width: calc(100vw - 60px);
+    width: 100%;
+  }
+  .data_table.columns_mod & {
+    width: calc(60vw - 30rem);
+    min-width: 922rem;
+
+  }
+  .data_table.columns_mod .data_table_row:nth-child(3n+2) & {
+    margin: 0 0 0 calc(-100% - 24rem);
+
+  }
+  .data_table.columns_mod .data_table_row:nth-child(3n) & {
+    margin: 0 0 0 calc(-200% - 48rem);
+  }
+  .data_table.columns_mod .data_table_row:nth-child(3n+1) & {
+    margin: 0;
+  }
+  @include respond-to-max($breakpoint_to_column) {
+    .data_table &,
+    .data_table.games_mod & {
+      width: calc(100vw - 77rem);
+      padding-bottom: 20rem;
+    }
+    .data_table_wrap.full_width_mod & {
+      width: calc(100vw - 60rem);
+    }
+    .data_table .data_table_row:nth-child(2n) & {
+      margin: 0 0 0 calc(-100% - 24rem);
+
+    }
+  }
+  @include respond-to-max($breakpoint_to_full) {
+    .data_table .data_table_row:nth-child(2n) & {
+      margin: 0 auto;
+
+    }
+  }
+  @include respond-to-max($breakpoint_custom_5) {
+    .data_table &,
+    .data_table.games_mod & {
+      padding: 20rem 20rem 10rem !important;
+    }
+  }
+  @include respond-to-max($breakpoint_to_full) {
+    .data_table &,
+    .data_table.games_mod & {
+      padding: 20rem 15rem;
+      width: 100%;
+    }
+  }
+  @include respond-to-max($breakpoint_custom_2) {
+    .data_table & {
+      margin: 0;
+      width: 100% !important;
+    }
+  }
+}
